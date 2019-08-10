@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<style>
+    #title {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    #description {
+        color:rgb(48, 49, 49)
+    }
+    body {
+        background-color: rgb(175, 199, 198);
+    }
+
+    .center {
+        margin: auto;
+        width: 80%;
+        border: 3px solid black;
+        padding: 10px;
+    }
+
+    .userinformation {
+        background-color: rgb(175, 199, 198);
+    }
+
+    #dropdown {
+
+    }
+
+    #surveyform {
+        background-color: rgb(200, 245, 223);
+    }
+
+    #additionalinput {
+        background-color: rgb(114, 190, 224);
+    }
+
+    textarea {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #submit {
+        width: 200px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+</style>
+
+<body>
+    <div class='center'>
+        <h1 id="title">Survey Regarding Consumer Opinion of DiHydrogen Oxide</h1>
+
+        <img src='data:image/jpeg;base64,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'
+        alt='Photo of DiHydrogen Oxide, substance of life.'>
+
+
+        <p class='questions' id='description'>
+            There's a substance that scientists have concluded is useful in almost every 
+            facet of daily life but, according to survey data, consumers are unsure about 
+            how they feel about it.  Please answer the following questions.  
+        </p>
+        
+        
+        <div>
+            <h2>User Information</h2>
+            <form class='userinformation' action='submit user information'>
+                <p>Please enter your name:</p>
+                    <label><input type="text" required name='name' placeholder="name"></label>
+                <p>Please enter your email:</p>
+                    <label><input type="email" required  name='email' placeholder="email"></label>
+                <p>Please enter you phone number:</p>   
+                    <input type="tel" required  name='tel' placeholder="telephone number">
+                <p>Please select housing type:</p>   
+                    <select name="housing">
+                        <option value="apartment">Apartment</option>
+                        <option value="house">House</option>
+                        <option value="condo">Condo</option>
+                        <option value="coop">Coop</option>
+                      </select><br><br> 
+                      <button type="submit" id='submit'>Submit</button>    
+            </form>
+        </div>
+
+        <div>
+            <form id='surveyform'>
+                <h2>Cleaning Household items</h2>
+                    <p class='questions'> It has been reported that, in accordance with the laws of entropy
+                        objects, friends, family, partners, pets and more all accumulate 
+                        a residue of particles and exudates over time.  Have you ever used 
+                        DiHydrogen Oxide to clean household objects that you use regularly 
+                        e.g. clothing, pots and pans, surfaces?
+                    </p>
+                    <label><input type="checkbox" name='Yes'>Yes</label>
+                    <label><input type="checkbox" name="No">No</label><br>
+                    
+            
+                <h2>Bathing</h2>
+
+                    <p class='questions'>
+                        Have you ever used DiHydrogen Oxide to clean your person?
+                    </p>
+                    <label><input type="checkbox" name='Yes'>Yes</label>
+                    <label><input type="checkbox" name="No">No</label><br>
+        
+                <h2>Drinking</h2>
+
+                    <p class='questions'>
+                    It has also been reported that DiHydrogen oxide is useful as a substance
+                    that relieves feelings of thirst.  Have you ever used DiHydrogen Oxide
+                    in this way?
+                    </p>
+                    <label><input type="checkbox" name='Yes'>Yes</label>
+                    <label><input type="checkbox" name="No">No</label><br>
+            
+                <h2>Food Preparation</h2>
+
+                    <p class='questions'>
+                    Food items that need to softened in order for their nutrient value
+                    to be of use to the human body can be submerged in DiHydrogen Oxide and 
+                    heated to produce digestible meals.  Have you used DiHydrogen Oxide in this 
+                    way?
+                    </p>
+                    <label><input type="checkbox" name='Yes'>Yes</label>
+                    <label><input type="checkbox" name="No">No</label><br>
+            
+                <h2>Pet Care</h2>
+
+                    <p class='questions'>Have you ever used DiHydrogen Oxide to help with your pet's feelings
+                    of thirst?
+                    </p>
+                    <label><input type="checkbox" name='Yes'>Yes</label>
+                    <label><input type="checkbox" name="No">No</label><br>
+            
+                <h2>Personal Temperature Controller</h2>
+
+                    <p class='questions'>
+                    Scientist have found that DiHydrogen Oxide mitigates ambient temperature
+                    by being slower that air to warm in summer and cool in winter.  Some people
+                    have found that submerging themselves in cool water in summer and warm water 
+                    in winter helps them regulate their body temperature.  Have you ever done this?
+                    </p>
+                    <label><input type="checkbox" name='Yes'>Yes</label>
+                    <label><input type="checkbox" name="No">No</label><br>
+        
+                <h2>Maintaining Greenspaces</h2>
+
+                    <p class='questions'>
+                    It appears that plants, (stationary organisms that are often wholly green 
+                    or contain many green parts because of a molecule called chlorophyll) use water
+                    in the same way as people to.  Therefore, it can be concluded that water is necessary
+                    for outdoor environments in temperate climates to remain green.  Are you familiar 
+                    with current use of water by plants?
+                    </p>
+                    <label><input type="checkbox" name='Yes'>Yes</label>
+                    <label><input type="checkbox" name="No">No</label><br>
+            
+                <h2>Maintaining Wildlife Habitat</h2>
+
+                    <p class='questions'>
+                    It is noted that non-human organisms that are not pets use DiHydrogen Oxide
+                    the same ways as humans, pets, and plants.  Are you familiar with this
+                    phenomenon?
+                    </p>
+                    <label><input type="checkbox" name='Yes'>Yes</label>
+                    <label><input type="checkbox" name="No">No</label>
+                    <br>
+                    <br>
+                    <br>
+                
+                
+            </form>
+        </div> 
+        
+        <div>  
+            <p id='additionalinput'>
+            Thank you for taking the time to fill out this survey on DiHydrogen Oxide.
+            Information collected will be used to promote public understanding.  More information
+            about this substance can be found <a href='https://en.wikipedia.org/wiki/Water'
+            target='_blank'>here.</a> 
+
+            Please feel free to leave additional comments: <br><br>
+            <textarea rows='10' cols='50'>
+
+            </textarea>
+            <br><br>
+            
+            <button type="submit" id='submit'>Submit</button>
+            
+            </p>
+        </div>
+    </div> 
+</body>    
+
